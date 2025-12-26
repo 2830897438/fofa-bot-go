@@ -1,4 +1,4 @@
-module github.com/yourusername/fofa-bot-go
+module github.com/2830897438/fofa-bot-go
 
 go 1.19
 

@@ -6,8 +6,8 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/yourusername/fofa-bot-go/internal/bot"
-	"github.com/yourusername/fofa-bot-go/internal/config"
+	"github.com/2830897438/fofa-bot-go/internal/bot"
+	"github.com/2830897438/fofa-bot-go/internal/config"
 )
 
 const (

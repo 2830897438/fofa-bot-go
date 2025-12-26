@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/yourusername/fofa-bot-go/internal/cache"
-	"github.com/yourusername/fofa-bot-go/internal/config"
-	"github.com/yourusername/fofa-bot-go/internal/fofa"
+	"github.com/2830897438/fofa-bot-go/internal/cache"
+	"github.com/2830897438/fofa-bot-go/internal/config"
+	"github.com/2830897438/fofa-bot-go/internal/fofa"
 
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 )

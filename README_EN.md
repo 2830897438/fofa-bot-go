@@ -58,3 +58,7 @@ For educational and research purposes only.
 ## Credits
 
 Based on the original Python version: [fofa_bot](https://github.com/gagmm/fofa_bot)
+
+## Repository
+
+https://github.com/2830897438/fofa-bot-go

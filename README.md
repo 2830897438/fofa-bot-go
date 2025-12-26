@@ -26,7 +26,7 @@
 
 ### 方式一：使用预编译二进制文件
 
-1. 从 [Releases](https://github.com/yourusername/fofa-bot-go/releases) 下载对应平台的二进制文件
+1. 从 [Releases](https://github.com/2830897438/fofa-bot-go/releases) 下载对应平台的二进制文件
 
 2. 创建配置文件 `config.json`：
 ```json
@@ -52,7 +52,7 @@ chmod +x fofa-bot
 
 1. 克隆仓库：
 ```bash
-git clone https://github.com/yourusername/fofa-bot-go.git
+git clone https://github.com/2830897438/fofa-bot-go.git
 cd fofa-bot-go
 ```
 
@@ -167,4 +167,4 @@ fofa-bot-go/
 
 ## 📞 支持
 
-如有问题或建议，请提交 [Issue](https://github.com/yourusername/fofa-bot-go/issues)。
+如有问题或建议，请提交 [Issue](https://github.com/2830897438/fofa-bot-go/issues)。
