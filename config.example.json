@@ -1,0 +1,12 @@
+{
+  "bot_token": "YOUR_BOT_TOKEN_HERE",
+  "apis": [
+    "YOUR_FOFA_API_KEY_HERE"
+  ],
+  "admins": [],
+  "proxy": "",
+  "full_mode": false,
+  "public_mode": false,
+  "presets": [],
+  "update_url": ""
+}
