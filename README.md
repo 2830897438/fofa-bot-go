@@ -2,6 +2,10 @@
 
 这是一个用 Go 语言重构的 FOFA Telegram 机器人，提供强大的网络空间资产搜索功能。
 
+[![Build and Release](https://github.com/2830897438/fofa-bot-go/actions/workflows/build.yml/badge.svg)](https://github.com/2830897438/fofa-bot-go/actions/workflows/build.yml)
+[![CI](https://github.com/2830897438/fofa-bot-go/actions/workflows/ci.yml/badge.svg)](https://github.com/2830897438/fofa-bot-go/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## ✨ 主要功能
 
 - 🔍 **FOFA 资产搜索** - 支持完整的 FOFA 查询语法
@@ -10,6 +14,7 @@
 - 💾 **智能缓存** - 自动缓存查询结果，节省 API 调用
 - 🕰️ **查询历史** - 记录最近的查询历史
 - ⚙️ **灵活配置** - 支持多 API Key、管理员权限等
+- 🤖 **自动构建** - GitHub Actions 自动编译多平台二进制文件
 
 ## 📋 准备工作
 
@@ -27,6 +32,11 @@
 ### 方式一：使用预编译二进制文件
 
 1. 从 [Releases](https://github.com/2830897438/fofa-bot-go/releases) 下载对应平台的二进制文件
+
+   **支持的平台**:
+   - Linux (amd64, arm64)
+   - macOS (amd64, arm64)
+   - Windows (amd64)
 
 2. 创建配置文件 `config.json`：
 ```json
