@@ -4,6 +4,7 @@
 
 [![Build and Release](https://github.com/2830897438/fofa-bot-go/actions/workflows/build.yml/badge.svg)](https://github.com/2830897438/fofa-bot-go/actions/workflows/build.yml)
 [![CI](https://github.com/2830897438/fofa-bot-go/actions/workflows/ci.yml/badge.svg)](https://github.com/2830897438/fofa-bot-go/actions/workflows/ci.yml)
+[![Docker](https://github.com/2830897438/fofa-bot-go/actions/workflows/docker.yml/badge.svg)](https://github.com/2830897438/fofa-bot-go/actions/workflows/docker.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## ✨ 主要功能
@@ -15,6 +16,7 @@
 - 🕰️ **查询历史** - 记录最近的查询历史
 - ⚙️ **灵活配置** - 支持多 API Key、管理员权限等
 - 🤖 **自动构建** - GitHub Actions 自动编译多平台二进制文件
+- 🐳 **Docker 支持** - 提供官方 Docker 镜像，一键部署
 
 ## 📋 准备工作
 
@@ -58,7 +60,41 @@ chmod +x fofa-bot
 ./fofa-bot
 ```
 
-### 方式二：从源码编译
+### 方式二：使用 Docker（推荐）
+
+1. 拉取 Docker 镜像：
+```bash
+docker pull ghcr.io/2830897438/fofa-bot-go:latest
+```
+
+2. 创建配置文件 `config.json`（同方式一）
+
+3. 使用 Docker Compose 运行：
+```bash
+# 下载 docker-compose.yml
+wget https://raw.githubusercontent.com/2830897438/fofa-bot-go/main/docker-compose.yml
+
+# 启动容器
+docker-compose up -d
+
+# 查看日志
+docker-compose logs -f
+```
+
+或使用 Docker 命令运行：
+```bash
+docker run -d \
+  --name fofa-bot \
+  --restart unless-stopped \
+  -v $(pwd)/config.json:/app/config.json:ro \
+  -v $(pwd)/fofa_cache:/app/fofa_cache \
+  -e TZ=Asia/Shanghai \
+  ghcr.io/2830897438/fofa-bot-go:latest
+```
+
+📖 详细的 Docker 部署说明请查看 [DOCKER.md](DOCKER.md)
+
+### 方式三：从源码编译
 
 1. 克隆仓库：
 ```bash

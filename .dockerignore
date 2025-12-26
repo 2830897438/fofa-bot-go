@@ -1,0 +1,41 @@
+# Git
+.git
+.gitignore
+
+# Build artifacts
+*.exe
+*.dll
+*.so
+*.dylib
+fofa-bot
+*.test
+*.out
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# Cache and data
+fofa_cache/
+*.log
+
+# Temporary files
+*.tmp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Documentation
+*.md
+!README.md
+LICENSE
+
+# CI/CD
+.github/
+
+# Go workspace
+go.work

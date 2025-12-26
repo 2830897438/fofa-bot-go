@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  fofa-bot:
+    image: fofa-bot-go:latest
+    container_name: fofa-bot
+    restart: unless-stopped
+
+    # Mount config file
+    volumes:
+      - ./config.json:/app/config.json:ro
+      - ./fofa_cache:/app/fofa_cache
+      - ./history.json:/app/history.json
+
+    # Optional: use host network for better connectivity
+    # network_mode: host
+
+    # Or use bridge network with proxy if needed
+    # environment:
+    #   - HTTP_PROXY=http://proxy:port
+    #   - HTTPS_PROXY=http://proxy:port
+
+    # Set timezone
+    environment:
+      - TZ=Asia/Shanghai
+
+    # Health check
+    healthcheck:
+      test: ["CMD", "pgrep", "-f", "fofa-bot"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+    # Logging
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
