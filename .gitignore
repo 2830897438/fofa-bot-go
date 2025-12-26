@@ -1,0 +1,42 @@
+# Binaries
+fofa-bot
+fofa-bot.exe
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test binary
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# Dependency directories
+vendor/
+
+# Go workspace file
+go.work
+
+# Config files
+config.json
+
+# Cache and data
+fofa_cache/
+*.json
+!go.mod
+!go.sum
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
